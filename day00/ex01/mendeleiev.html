@@ -1,0 +1,781 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mendeleïev</title>
+    <style>
+        body {
+            background-color: #f5efe3;
+        }
+
+        .content {
+            max-width: 1210px;
+            min-width: 1000px;
+            margin-left:auto;
+            margin-right:auto;
+        }
+
+        table {
+            border-collapse: collapse;
+        }
+
+        td.element {
+            border: 1px solid black;
+        }
+
+        table td {
+            position: relative;
+            text-align: center;
+            width: 50px;
+            height: 60px;
+            min-width: 50px;
+            min-height: 60px;
+        }
+
+        table td .number {
+            position: absolute;
+            bottom: 5px;
+            left: 5px;
+            font-size: 12px;
+        }
+
+        table td .atomic-mass {
+            position: absolute;
+            top: 5px;
+            right: 5px;
+            font-size: 12px;
+        }
+
+        table td .letter {
+            font-weight: bold;
+            font-size: 25px;
+        }
+
+        table tr.spacer {
+            height: 60px;
+        }
+
+        h1 {
+            font-size: 40px;
+            text-align: center;
+            margin-bottom: 100px;
+            font-family: Georgia,sans-serif;
+            text-decoration: underline;
+        }
+
+        h1 img {
+            width: 200px;
+            border-radius: 25px;
+            margin-left: 30px;
+            margin-bottom: -20px;
+        }
+
+        .yellow {
+            background-color: yellow;
+        }
+
+        .red {
+            background-color: #ff471a;
+        }
+
+        .cyan {
+            background-color: #00FFFF;
+        }
+
+        .aquamarine {
+            background: #7FFFD4;
+        }
+        
+        .orange {
+            background-color: orange;
+        }
+
+        .gray {
+            background-color: #a6a6a6;
+        }
+
+        .pink {
+            background-color: pink;
+        }
+
+        .white {
+            background: white;
+        }
+
+        .green {
+            background-color: #ADFF2F;
+        }
+
+        .purple {
+            background-color: #e580ff;
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <h1>
+            Periodic table
+           <img src="https://cdni.rt.com/files/2020.01/l/5e2b241485f540686c22e564.png" alt="">
+       </h1>
+       <table contenteditable="true">
+           <tbody>
+                <tr>
+                   <td class="element yellow">
+                       <div class="number">1</div>
+                       <div class="letter">H</div>
+                       <div class="atomic-mass">1,008</div>
+                   </td>
+                   <td></td>
+                   <td></td>
+                   <td></td>
+                   <td></td>
+                   <td></td>
+                   <td></td>
+                   <td></td>
+                   <td></td>
+                   <td></td>
+                   <td></td>
+                   <td></td>
+                   <td></td>
+                   <td></td>
+                   <td></td>
+                   <td></td>
+                   <td></td>
+                   <td class="element red">
+                       <div class="number">2</div>
+                       <div class="letter">He</div>
+                       <div class="atomic-mass">4,00</div>
+                   </td>
+               </tr>
+                <tr>
+                   <td class="element cyan">
+                       <div class="number">3</div>
+                       <div class="letter">Li</div>
+                       <div class="atomic-mass">6,94</div>
+                   </td>
+                   <td class="element aquamarine">
+                       <div class="number">4</div>
+                       <div class="letter">Be</div>
+                       <div class="atomic-mass">9,01</div>
+                   </td>
+                   <td></td>
+                   <td></td>
+                   <td></td>
+                   <td></td>
+                   <td></td>
+                   <td></td>
+                   <td></td>
+                   <td></td>
+                   <td></td>
+                   <td></td>
+                   <td class="element orange">
+                       <div class="number">5</div>
+                       <div class="letter">B</div>
+                       <div class="atomic-mass">10,81</div>
+                   </td>
+                   <td class="element yellow">
+                       <div class="number">6</div>
+                       <div class="letter">C</div>
+                       <div class="atomic-mass">12,01</div>
+                   </td>
+                   <td class="element yellow">
+                       <div class="number">7</div>
+                       <div class="letter">N</div>
+                       <div class="atomic-mass">14,01</div>
+                   </td>
+                   <td class="element yellow">
+                       <div class="number">8</div>
+                       <div class="letter">O</div>
+                       <div class="atomic-mass">16,00</div>
+                   </td>
+                   <td class="element yellow">
+                       <div class="number">9</div>
+                       <div class="letter">F</div>
+                       <div class="atomic-mass">19,00</div>
+                   </td>
+                   <td class="element red">
+                       <div class="number">10</div>
+                       <div class="letter">Ne</div>
+                       <div class="atomic-mass">20,18</div>
+                   </td>
+               </tr>
+                <tr>
+                   <td class="element cyan">
+                       <div class="number">11</div>
+                       <div class="letter">Na</div>
+                       <div class="atomic-mass">22,99</div>
+                   </td>
+                   <td class="element aquamarine">
+                       <div class="number">12</div>
+                       <div class="letter">Mg</div>
+                       <div class="atomic-mass">24,31</div>
+                   </td>
+                   <td></td>
+                   <td></td>
+                   <td></td>
+                   <td></td>
+                   <td></td>
+                   <td></td>
+                   <td></td>
+                   <td></td>
+                   <td></td>
+                   <td></td>
+                   <td class="element gray">
+                       <div class="number">13</div>
+                       <div class="letter">Al</div>
+                       <div class="atomic-mass">26,98</div>
+                   </td>
+                   <td class="element orange">
+                       <div class="number">14</div>
+                       <div class="letter">Si</div>
+                       <div class="atomic-mass">28,09</div>
+                   </td>
+                   <td class="element yellow">
+                       <div class="number">15</div>
+                       <div class="letter">P</div>
+                       <div class="atomic-mass">30,97</div>
+                   </td>
+                   <td class="element yellow">
+                       <div class="number">16</div>
+                       <div class="letter">S</div>
+                       <div class="atomic-mass">32,06</div>
+                   </td>
+                   <td class="element yellow">
+                       <div class="number">17</div>
+                       <div class="letter">Cl</div>
+                       <div class="atomic-mass">35,45</div>
+                   </td>
+                   <td class="element red">
+                       <div class="number">18</div>
+                       <div class="letter">Ar</div>
+                       <div class="atomic-mass">39,95</div>
+                   </td>
+               </tr>
+                <tr>
+                   <td class="element cyan">
+                       <div class="number">19</div>
+                       <div class="letter">K</div>
+                       <div class="atomic-mass">39,10</div>
+                   </td>
+                   <td class="element aquamarine">
+                       <div class="number">20</div>
+                       <div class="letter">Ca</div>
+                       <div class="atomic-mass">40,08</div>
+                   </td>
+                   <td class="element pink">
+                       <div class="number">21</div>
+                       <div class="letter">Sc</div>
+                       <div class="atomic-mass">44,96</div>
+                   </td>
+                   <td class="element pink">
+                       <div class="number">22</div>
+                       <div class="letter">Ti</div>
+                       <div class="atomic-mass">47,87</div>
+                   </td>
+                   <td class="element pink">
+                       <div class="number">23</div>
+                       <div class="letter">V</div>
+                       <div class="atomic-mass">50,94</div>
+                   </td>
+                   <td class="element pink">
+                       <div class="number">24</div>
+                       <div class="letter">Cr</div>
+                       <div class="atomic-mass">52,00</div>
+                   </td>
+                   <td class="element pink">
+                       <div class="number">25</div>
+                       <div class="letter">Mn</div>
+                       <div class="atomic-mass">54,94</div>
+                   </td>
+                   <td class="element pink">
+                       <div class="number">26</div>
+                       <div class="letter">Fe</div>
+                       <div class="atomic-mass">55,85</div>
+                   </td>
+                   <td class="element pink">
+                       <div class="number">27</div>
+                       <div class="letter">Co</div>
+                       <div class="atomic-mass">58,93</div>
+                   </td>
+                   <td class="element pink">
+                       <div class="number">28</div>
+                       <div class="letter">Ni</div>
+                       <div class="atomic-mass">58,69</div>
+                   </td>
+                   <td class="element pink">
+                       <div class="number">29</div>
+                       <div class="letter">Cu</div>
+                       <div class="atomic-mass">63,55</div>
+                   </td>
+                   <td class="element gray">
+                       <div class="number">30</div>
+                       <div class="letter">Zn</div>
+                       <div class="atomic-mass">65,38</div>
+                   </td>
+                   <td class="element gray">
+                       <div class="number">31</div>
+                       <div class="letter">Ga</div>
+                       <div class="atomic-mass">69,72</div>
+                   </td>
+                   <td class="element orange">
+                       <div class="number">32</div>
+                       <div class="letter">Ge</div>
+                       <div class="atomic-mass">72,63</div>
+                   </td>
+                   <td class="element orange">
+                       <div class="number">33</div>
+                       <div class="letter">As</div>
+                       <div class="atomic-mass">74,92</div>
+                   </td>
+                   <td class="element yellow">
+                       <div class="number">34</div>
+                       <div class="letter">Se</div>
+                       <div class="atomic-mass">78,96</div>
+                   </td>
+                   <td class="element yellow">
+                       <div class="number">35</div>
+                       <div class="letter">Br</div>
+                       <div class="atomic-mass">79,90</div>
+                   </td>
+                   <td class="element red">
+                       <div class="number">36</div>
+                       <div class="letter">Kr</div>
+                       <div class="atomic-mass">83,80</div>
+                   </td>
+               </tr>
+                <tr>
+                    <td class="element cyan">
+                        <div class="number">37</div>
+                        <div class="letter">Rb</div>
+                        <div class="atomic-mass">85,47</div>
+                    </td>
+                    <td class="element aquamarine">
+                        <div class="number">38</div>
+                        <div class="letter">Sr</div>
+                        <div class="atomic-mass">87,62</div>
+                    </td>
+                    <td class="element pink">
+                        <div class="number">39</div>
+                        <div class="letter">Y</div>
+                        <div class="atomic-mass">88,91</div>
+                    </td>
+                    <td class="element pink">
+                        <div class="number">40</div>
+                        <div class="letter">Zr</div>
+                        <div class="atomic-mass">91,22</div>
+                    </td>
+                    <td class="element pink">
+                        <div class="number">41</div>
+                        <div class="letter">Nb</div>
+                        <div class="atomic-mass">92,91</div>
+                    </td>
+                    <td class="element pink">
+                        <div class="number">42</div>
+                        <div class="letter">Mo</div>
+                        <div class="atomic-mass">95,96</div>
+                    </td>
+                    <td class="element pink">
+                        <div class="number">43</div>
+                        <div class="letter">Tc</div>
+                        <div class="atomic-mass">[98]</div>
+                    </td>
+                    <td class="element pink">
+                        <div class="number">44</div>
+                        <div class="letter">Ru</div>
+                        <div class="atomic-mass">101,07</div>
+                    </td>
+                    <td class="element pink">
+                        <div class="number">45</div>
+                        <div class="letter">Rh</div>
+                        <div class="atomic-mass">102,91</div>
+                    </td>
+                    <td class="element pink">
+                        <div class="number">46</div>
+                        <div class="letter">Pd</div>
+                        <div class="atomic-mass">106,42</div>
+                    </td>
+                    <td class="element pink">
+                        <div class="number">47</div>
+                        <div class="letter">Ag</div>
+                        <div class="atomic-mass">107,87</div>
+                    </td>
+                    <td class="element gray">
+                        <div class="number">48</div>
+                        <div class="letter">Cd</div>
+                        <div class="atomic-mass">112,41</div>
+                    </td>
+                    <td class="element gray">
+                        <div class="number">49</div>
+                        <div class="letter">In</div>
+                        <div class="atomic-mass">114,82</div>
+                    </td>
+                    <td class="element gray">
+                        <div class="number">50</div>
+                        <div class="letter">Sn</div>
+                        <div class="atomic-mass">118,71</div>
+                    </td>
+                    <td class="element orange">
+                        <div class="number">51</div>
+                        <div class="letter">Sb</div>
+                        <div class="atomic-mass">121,76</div>
+                    </td>
+                    <td class="element orange">
+                        <div class="number">52</div>
+                        <div class="letter">Te</div>
+                        <div class="atomic-mass">127,60</div>
+                    </td>
+                    <td class="element yellow">
+                        <div class="number">53</div>
+                        <div class="letter">I</div>
+                        <div class="atomic-mass">126,90</div>
+                    </td>
+                    <td class="element red">
+                        <div class="number">54</div>
+                        <div class="letter">Xe</div>
+                        <div class="atomic-mass">131,29</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="element cyan">
+                        <div class="number">55</div>
+                        <div class="letter">Cs</div>
+                        <div class="atomic-mass">132,91</div>
+                    </td>
+                    <td class="element aquamarine">
+                        <div class="number">56</div>
+                        <div class="letter">Ba</div>
+                        <div class="atomic-mass">137,33</div>
+                    </td>
+                    <td class="element green">
+                        <div class="number">57</div>
+                        <div class="letter">La</div>
+                        <div class="atomic-mass">138,91</div>
+                    </td>
+                    <td class="element pink">
+                        <div class="number">72</div>
+                        <div class="letter">Hf</div>
+                        <div class="atomic-mass">178,49</div>
+                    </td>
+                    <td class="element pink">
+                        <div class="number">73</div>
+                        <div class="letter">Ta</div>
+                        <div class="atomic-mass">180,95</div>
+                    </td>
+                    <td class="element pink">
+                        <div class="number">74</div>
+                        <div class="letter">W</div>
+                        <div class="atomic-mass">183,95</div>
+                    </td>
+                    <td class="element pink">
+                        <div class="number">75</div>
+                        <div class="letter">Re</div>
+                        <div class="atomic-mass">186,21</div>
+                    </td>
+                    <td class="element pink">
+                        <div class="number">76</div>
+                        <div class="letter">Os</div>
+                        <div class="atomic-mass">190,23</div>
+                    </td>
+                    <td class="element pink">
+                        <div class="number">77</div>
+                        <div class="letter">Ir</div>
+                        <div class="atomic-mass">192,22</div>
+                    </td>
+                    <td class="element pink">
+                        <div class="number">78</div>
+                        <div class="letter">Pt</div>
+                        <div class="atomic-mass">195,08</div>
+                    </td>
+                    <td class="element pink">
+                        <div class="number">79</div>
+                        <div class="letter">Au</div>
+                        <div class="atomic-mass">196,97</div>
+                    </td>
+                    <td class="element gray">
+                        <div class="number">80</div>
+                        <div class="letter">Hg</div>
+                        <div class="atomic-mass">200,59</div>
+                    </td>
+                    <td class="element gray">
+                        <div class="number">81</div>
+                        <div class="letter">Tl</div>
+                        <div class="atomic-mass">204,38</div>
+                    </td>
+                    <td class="element gray">
+                        <div class="number">82</div>
+                        <div class="letter">Pb</div>
+                        <div class="atomic-mass">207,2</div>
+                    </td>
+                    <td class="element gray">
+                        <div class="number">83</div>
+                        <div class="letter">Bi</div>
+                        <div class="atomic-mass">208,98</div>
+                    </td>
+                    <td class="element gray">
+                        <div class="number">84</div>
+                        <div class="letter">Po</div>
+                        <div class="atomic-mass">[209]</div>
+                    </td>
+                    <td class="element orange">
+                        <div class="number">85</div>
+                        <div class="letter">At</div>
+                        <div class="atomic-mass">[210]</div>
+                    </td>
+                    <td class="element red">
+                        <div class="number">86</div>
+                        <div class="letter">Rn</div>
+                        <div class="atomic-mass">[222]</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="element cyan">
+                        <div class="number">87</div>
+                        <div class="letter">Fr</div>
+                        <div class="atomic-mass">[223]</div>
+                    </td>
+                    <td class="element aquamarine">
+                        <div class="number">88</div>
+                        <div class="letter">Ra</div>
+                        <div class="atomic-mass">[226]</div>
+                    </td>
+                    <td class="element purple">
+                        <div class="number">89</div>
+                        <div class="letter">Ac</div>
+                        <div class="atomic-mass">[227]</div>
+                    </td>
+                    <td class="element pink">
+                        <div class="number">104</div>
+                        <div class="letter">Rf</div>
+                        <div class="atomic-mass">[267]</div>
+                    </td>
+                    <td class="element pink">
+                        <div class="number">105</div>
+                        <div class="letter">Db</div>
+                        <div class="atomic-mass">[268]</div>
+                    </td>
+                    <td class="element pink">
+                        <div class="number">106</div>
+                        <div class="letter">Sg</div>
+                        <div class="atomic-mass">[271]</div>
+                    </td>
+                    <td class="element pink">
+                        <div class="number">107</div>
+                        <div class="letter">Bh</div>
+                        <div class="atomic-mass">[272]</div>
+                    </td>
+                    <td class="element pink">
+                        <div class="number">108</div>
+                        <div class="letter">Hs</div>
+                        <div class="atomic-mass">[277]</div>
+                    </td>
+                    <td class="element white">
+                        <div class="number">109</div>
+                        <div class="letter">Mt</div>
+                        <div class="atomic-mass">[276]</div>
+                    </td>
+                    <td class="element white">
+                        <div class="number">110</div>
+                        <div class="letter">Ds</div>
+                        <div class="atomic-mass">[281]</div>
+                    </td>
+                    <td class="element white">
+                        <div class="number">111</div>
+                        <div class="letter">Rg</div>
+                        <div class="atomic-mass">[280]</div>
+                    </td>
+                    <td class="element gray">
+                        <div class="number">112</div>
+                        <div class="letter">Cn</div>
+                        <div class="atomic-mass">[285]</div>
+                    </td>
+                    <td class="element white">
+                        <div class="number">113</div>
+                        <div class="letter">Nh</div>
+                        <div class="atomic-mass">[248]</div>
+                    </td>
+                    <td class="element white">
+                        <div class="number">114</div>
+                        <div class="letter">Fl</div>
+                        <div class="atomic-mass">[289]</div>
+                    </td>
+                    <td class="element white">
+                        <div class="number">115</div>
+                        <div class="letter">Mc</div>
+                        <div class="atomic-mass">[288]</div>
+                    </td>
+                    <td class="element white">
+                        <div class="number">116</div>
+                        <div class="letter">Lv</div>
+                        <div class="atomic-mass">[292]</div>
+                    </td>
+                    <td class="element white">
+                        <div class="number">117</div>
+                        <div class="letter">Ts</div>
+                        <div class="atomic-mass">[292]</div>
+                    </td>
+                    <td class="element white">
+                        <div class="number">118</div>
+                        <div class="letter">Og</div>
+                        <div class="atomic-mass">[210]</div>
+                    </td>
+                </tr>
+                <tr class="spacer"></tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="element green">
+                        <div class="number">58</div>
+                        <div class="letter">Ce</div>
+                        <div class="atomic-mass">140,12</div>
+                    </td>
+                    <td class="element green">
+                        <div class="number">59</div>
+                        <div class="letter">Pr</div>
+                        <div class="atomic-mass">140,91</div>
+                    </td>
+                    <td class="element green">
+                        <div class="number">60</div>
+                        <div class="letter">Nd</div>
+                        <div class="atomic-mass">144,24</div>
+                    </td>
+                    <td class="element green">
+                        <div class="number">61</div>
+                        <div class="letter">Pm</div>
+                        <div class="atomic-mass">[145]</div>
+                    </td>
+                    <td class="element green">
+                        <div class="number">62</div>
+                        <div class="letter">Sm</div>
+                        <div class="atomic-mass">150,36</div>
+                    </td>
+                    <td class="element green">
+                        <div class="number">63</div>
+                        <div class="letter">Eu</div>
+                        <div class="atomic-mass">151,96</div>
+                    </td>
+                    <td class="element green">
+                        <div class="number">64</div>
+                        <div class="letter">Gd</div>
+                        <div class="atomic-mass">157,25</div>
+                    </td>
+                    <td class="element green">
+                        <div class="number">65</div>
+                        <div class="letter">Tb</div>
+                        <div class="atomic-mass">158,93</div>
+                    </td>
+                    <td class="element green">
+                        <div class="number">66</div>
+                        <div class="letter">Dy</div>
+                        <div class="atomic-mass">162,50</div>
+                    </td>
+                    <td class="element green">
+                        <div class="number">67</div>
+                        <div class="letter">Ho</div>
+                        <div class="atomic-mass">164,93</div>
+                    </td>
+                    <td class="element green">
+                        <div class="number">68</div>
+                        <div class="letter">Er</div>
+                        <div class="atomic-mass">167,26</div>
+                    </td>
+                    <td class="element green">
+                        <div class="number">69</div>
+                        <div class="letter">Tm</div>
+                        <div class="atomic-mass">168,93</div>
+                    </td>
+                    <td class="element green">
+                        <div class="number">70</div>
+                        <div class="letter">Yb</div>
+                        <div class="atomic-mass">173,05</div>
+                    </td>
+                    <td class="element green">
+                        <div class="number">71</div>
+                        <div class="letter">Lu</div>
+                        <div class="atomic-mass">174,97</div>
+                    </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="element purple">
+                        <div class="number">90</div>
+                        <div class="letter">Th</div>
+                        <div class="atomic-mass">232,04</div>
+                    </td>
+                    <td class="element purple">
+                        <div class="number">91</div>
+                        <div class="letter">Pa</div>
+                        <div class="atomic-mass">231,04</div>
+                    </td>
+                    <td class="element purple">
+                        <div class="number">92</div>
+                        <div class="letter">U</div>
+                        <div class="atomic-mass">238,03</div>
+                    </td>
+                    <td class="element purple">
+                        <div class="number">93</div>
+                        <div class="letter">Np</div>
+                        <div class="atomic-mass">[237]</div>
+                    </td>
+                    <td class="element purple">
+                        <div class="number">94</div>
+                        <div class="letter">Pu</div>
+                        <div class="atomic-mass">[244]</div>
+                    </td>
+                    <td class="element purple">
+                        <div class="number">95</div>
+                        <div class="letter">Am</div>
+                        <div class="atomic-mass">[243]</div>
+                    </td>
+                    <td class="element purple">
+                        <div class="number">96</div>
+                        <div class="letter">Cm</div>
+                        <div class="atomic-mass">[247]</div>
+                    </td>
+                    <td class="element purple">
+                        <div class="number">97</div>
+                        <div class="letter">Bk</div>
+                        <div class="atomic-mass">[247]</div>
+                    </td>
+                    <td class="element purple">
+                        <div class="number">98</div>
+                        <div class="letter">Cf</div>
+                        <div class="atomic-mass">[251]</div>
+                    </td>
+                    <td class="element purple">
+                        <div class="number">99</div>
+                        <div class="letter">Es</div>
+                        <div class="atomic-mass">[252]</div>
+                    </td>
+                    <td class="element purple">
+                        <div class="number">100</div>
+                        <div class="letter">Fm</div>
+                        <div class="atomic-mass">[257]</div>
+                    </td>
+                    <td class="element purple">
+                        <div class="number">101</div>
+                        <div class="letter">Md</div>
+                        <div class="atomic-mass">[258]</div>
+                    </td>
+                    <td class="element purple">
+                        <div class="number">102</div>
+                        <div class="letter">No</div>
+                        <div class="atomic-mass">[259]</div>
+                    </td>
+                    <td class="element purple">
+                        <div class="number">103</div>
+                        <div class="letter">Lr</div>
+                        <div class="atomic-mass">[262]</div>
+                    </td>
+                    <td></td>
+                </tr>
+           </tbody>
+       </table>
+
+   </div>
+
+</body>
+</html>

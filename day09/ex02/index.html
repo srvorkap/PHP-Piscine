@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>To do or not to do</title>
+		<style>
+        	.wrap {
+				font-family: Times New Roman, Times, serif;
+            	text-align: center;
+				font-size: 30px;
+				line-height: 200%;
+        	}
+        	input[type=submit] {
+            	display: inline-block;
+            	font-size: 30px;
+            	cursor: pointer;
+            	width: 135px;
+            	height: 60px;
+            	background-color: blue;
+				border-radius: 15px;
+				font-weight: bold;
+        	}
+        	input[type=submit]:hover {
+            	background-color: yellow;
+        	}
+    	</style>
+	</head>
+	<body>
+		<div class="wrap">
+		<input type="submit" onclick="add()" value="New"></input>
+		<div id='ft_list'>
+		<script src="todo.js"></script>
+		</div>
+		</div>
+    </body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Come blow this balloon</title>
+		<style>
+
+			#balloon {
+				width: 200px;
+				height: 200px;
+				background: red;
+				border-radius: 50%;
+        }
+
+		</style>
+	</head>
+	<body>
+    <div id="balloon"></div>
+    <script>
+
+        let balloon = document.getElementById("balloon");
+		let size = 200;
+        let colors = ["red", "green", "blue"];
+        let color = 0;
+
+		function setSize() {
+            if (size < 200 || size > 420)
+                size = 200;
+            balloon.style.width = size + "px";
+            balloon.style.height = size + "px";
+        }
+
+        function setColor() {
+            if (color < 0)
+                color = 2;
+            else if (color > 2)
+                color = 0;
+            balloon.style.background = colors[color];
+        }
+
+        balloon.addEventListener("click", function() {
+            size = size + 10;
+            color++;
+            setSize();
+            setColor();
+        });
+
+        balloon.addEventListener("mouseleave", function() {
+            size = size - 5;
+            color--;
+            setSize();
+            setColor();
+        });
+
+    </script>
+	</body>
+</html>
